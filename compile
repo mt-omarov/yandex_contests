@@ -2,4 +2,4 @@
 
 # use from dir, where .cpp is located (e.g.: $ ../compile your_hw.cpp)
 clang++ -std=c++20 -fsanitize=address,undefined -Wall -Wextra -Werror $1 -o hw || exit
-./hw
+./hw && rm ./hw

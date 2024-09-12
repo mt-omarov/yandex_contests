@@ -10,6 +10,8 @@
 |7. Сортировка событий					|[Задачи](https://contest.yandex.ru/contest/27883/problems/), [Решения](./1_training/7_hw.cpp)|+|+|–|–|+|–|–|–|–|–|
 |8. Деревья							|[Задачи](https://contest.yandex.ru/contest/28069/problems/), [Решения](./1_training/8_hw.cpp)|+|+|+|+|+|+|+|+|+|+|
 
+*Итого нерешенных: __11__ (__13.75 %__)*
+
 ## [Тренировки 2.0](https://yandex.ru/yaintern/algorithm-training_june_2021?from=contest_new)
 ### Дивизион B
 |№ ДЗ| Ссылки | A | B | C | D | E |
@@ -23,6 +25,8 @@
 |7|[Задачи](https://contest.yandex.ru/contest/29396/problems/), [Решения](./2_B_training/7_hw.cpp)|+|+|+|+|–|
 |8|[Задачи](https://contest.yandex.ru/contest/29403/problems/), [Решения](./2_B_training/8_hw.cpp)|+|+|+|+|–|
 
+*Итого нерешенных: __3__ (__7.5 %__)*
+
 ### Дивизион A
 |№ ДЗ| Ссылки | A | B | C | D | E |
 |:-------:|:------:|:-:|:-:|:-:|:-:|:-:|
@@ -32,8 +36,25 @@
 |4|[Задачи](https://contest.yandex.ru/contest/28969/problems/), [Решения](./2_A_training/4_hw.cpp)|+|+|–|+|+|
 |5|[Задачи](https://contest.yandex.ru/contest/29072/problems/), [Решения](./2_A_training/5_hw.cpp)|+|+|–|–|–|
 |6|[Задачи](https://contest.yandex.ru/contest/29189/problems/), [Решения](./2_A_training/6_hw.cpp)|+|+|–|–|–|
+|7|–|–|–|–|–|–|
+
+*Итого нерешенных: __14__ (__40 %__)*
 
 ## [Тренировки 3.0](https://yandex.ru/yaintern/training/algorithm-training_feb_2023)
+### [Задачи](https://contest.yandex.ru/contest/45468/problems/)
+|Задачи| Ссылки | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|:-------:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|1 - 10|[Решения](./3_B_training/0_hw.cpp)|+|+|+|+|+|+|+|+|–|+|
+
+|№ Лекции| Ссылки | A | B | C | D | E |
+|:-------:|:------:|:-:|:-:|:-:|:-:|:-:|
+|1|[Решения](./3_B_training/1_hw.cpp)|+|+|+|+|+|
+|2|[Решения](./3_B_training/2_hw.cpp)|+|+|+|+|+|
+|3|[Решения](./3_B_training/3_hw.cpp)|+|+|+|+|+|
+|4|[Решения](./3_B_training/4_hw.cpp)|+|+|+|–|+|
+
+*Итого нерешенных: __2__ (__8 %__)*
+
 
 ## [Тренировочный контест](https://contest.yandex.ru/contest/50668/)
 |Задание| Ссылки | Статус |
@@ -46,9 +67,9 @@
 
 ## [Хендбук "Основы алгоритмов"](https://education.yandex.ru/handbook/algorithms)
 
-## Компиляция программ
+## Компиляция и флаги
 bash-скрипт [`compile`](./compile):
 ```bash
 clang++ -std=c++20 -fsanitize=address,undefined -Wall -Wextra -Werror $1 -o hw || exit
+./hw && rm ./hw
 ```
-пример использования: `$ ../compile your_hw.cpp`
